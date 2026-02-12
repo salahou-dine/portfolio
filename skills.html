@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compétences techniques de MOROU Salahou dine - IA, Data Science, Développement et Cybersécurité.">
+    
+    <title>Compétences | MOROU Salahou dine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">MSd</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">Profil</a></li>
+                <li><a href="projects.html" class="nav-link">Projets</a></li>
+                <li><a href="skills.html" class="nav-link active">Compétences</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificats</a></li>
+                <li><a href="hackathons.html" class="nav-link">Hackathons</a></li>
+                <li><a href="contact.html" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Compétences techniques</h1>
+            <p class="page-description">
+                Compétences en cours de développement, classées par domaine avec indication 
+                du niveau actuel. Chaque compétence est liée à des projets concrets.
+            </p>
+        </div>
+    </header>
+
+    <!-- Legend -->
+    <section class="section" style="padding-top: var(--space-8); padding-bottom: 0;">
+        <div class="container">
+            <div class="alert alert--info">
+                <strong>Légende des niveaux :</strong>
+                <span style="margin-left: var(--space-4);">
+                    <span class="skill-level-label beginner" style="margin-right: var(--space-2);">Débutant</span> = Bases acquises, pratique occasionnelle
+                </span>
+                <span style="margin-left: var(--space-4);">
+                    <span class="skill-level-label intermediate" style="margin-right: var(--space-2);">Intermédiaire</span> = Utilisation régulière en projets
+                </span>
+                <span style="margin-left: var(--space-4);">
+                    <span class="skill-level-label advanced" style="margin-right: var(--space-2);">Avancé</span> = Maîtrise approfondie
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content" style="padding-top: 0;">
+        <div class="container">
+            
+            <!-- Data Science & Analytics -->
+            <section class="skills-category">
+                <h2>Data Science & Analytics</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Python (Data)</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#maintenance-predictive">Maintenance prédictive</a>, 
+                            <a href="projects.html#covid-dashboard">Dashboard COVID</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Pandas / NumPy</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#maintenance-predictive">Maintenance prédictive</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Projets académiques (BDD)
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Visualisation (Matplotlib, Plotly)</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#covid-dashboard">Dashboard COVID</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Power BI</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Formation académique
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Statistiques descriptives</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Tous les projets data
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Machine Learning & IA -->
+            <section class="skills-category">
+                <h2>Machine Learning & Intelligence Artificielle</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">scikit-learn</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#maintenance-predictive">Maintenance prédictive</a>, 
+                            <a href="projects.html#fraud-detection">Détection fraude</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Apprentissage supervisé</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Algorithmes : </span>
+                            Régression, Classification, Arbres, SVM
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Apprentissage non supervisé</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Algorithmes : </span>
+                            K-means, PCA, DBSCAN
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">TensorFlow / Keras</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#fraud-detection">Détection fraude</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">XGBoost / LightGBM</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#maintenance-predictive">Maintenance prédictive</a>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Feature Engineering</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Tous les projets ML
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Développement -->
+            <section class="skills-category">
+                <h2>Développement & Programmation</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Python (général)</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Langage principal pour tous les projets</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Git / GitHub</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Versioning de tous les projets</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML / CSS</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Ce portfolio, interfaces web
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 35%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Notions de base, interactivité</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">C / C++</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Formation académique (algorithmique)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">API REST</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            <a href="projects.html#covid-dashboard">Dashboard COVID</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Systèmes & Infrastructure -->
+            <section class="skills-category">
+                <h2>Systèmes & Cybersécurité</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux (Ubuntu, Debian)</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Environnement de développement principal</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Bash / Shell scripting</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 45%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Automatisation de tâches</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Réseaux (TCP/IP)</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Formation académique</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Cryptographie (bases)</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 35%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Formation académique</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 30%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>En cours d'apprentissage</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Sécurité applicative</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 35%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>OWASP Top 10, bonnes pratiques</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Outils & Méthodologies -->
+            <section class="skills-category">
+                <h2>Outils & Méthodologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Jupyter Notebooks</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Environnement principal pour l'analyse</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>IDE principal</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">LaTeX</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Rapports académiques</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Méthodologie CRISP-DM</span>
+                            <span class="skill-level-label beginner">Débutant</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Utilisé dans : </span>
+                            Projets data science
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Travail collaboratif</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>Projets en équipe, hackathons</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Documentation technique</span>
+                            <span class="skill-level-label intermediate">Intermédiaire</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;"></div>
+                        </div>
+                        <div class="skill-projects">
+                            <span>README, rapports, présentations</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">MOROU Salahou dine</p>
+                    <p class="footer-role">Étudiant Ingénieur — Centrale Casablanca</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@example.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MOROU Salahou dine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

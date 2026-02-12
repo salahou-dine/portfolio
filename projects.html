@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets IA, Data Science et Cybersécurité de MOROU Salahou dine - Étudiant ingénieur Centrale Casablanca.">
+    
+    <title>Projets | MOROU Salahou dine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">MSd</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">Profil</a></li>
+                <li><a href="projects.html" class="nav-link active">Projets</a></li>
+                <li><a href="skills.html" class="nav-link">Compétences</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificats</a></li>
+                <li><a href="hackathons.html" class="nav-link">Hackathons</a></li>
+                <li><a href="contact.html" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Projets</h1>
+            <p class="page-description">
+                Sélection de travaux académiques et personnels. Chaque projet suit une 
+                démarche d'ingénierie rigoureuse avec documentation des approches, 
+                résultats et limites identifiées.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Filters -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="security">Cybersécurité</button>
+                <button class="filter-btn" data-filter="academic">Académique</button>
+            </div>
+
+            <!-- Project 1: Maintenance Prédictive -->
+            <article class="project-detail" id="maintenance-predictive" data-category="ml academic">
+                <div class="project-detail-header">
+                    <div>
+                        <div class="project-meta">
+                            <span class="badge badge--primary">Projet académique</span>
+                            <span class="badge">2025</span>
+                            <span class="badge">Équipe de 4</span>
+                        </div>
+                        <h2 style="margin-top: var(--space-3);">Système de prédiction de maintenance industrielle</h2>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            Code source
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            Rapport PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Problème adressé</h3>
+                    <p>
+                        Dans l'industrie manufacturière, les arrêts non planifiés d'équipements 
+                        représentent des pertes significatives (estimées entre 5% et 20% de la 
+                        capacité de production). L'objectif était de développer un système capable 
+                        d'anticiper les défaillances à partir de données de capteurs IoT, permettant 
+                        une planification proactive de la maintenance.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Contexte</h3>
+                    <p>
+                        Projet réalisé dans le cadre du module "Machine Learning Appliqué" 
+                        (2ème année). Travail en équipe de 4 étudiants sur 8 semaines. 
+                        Encadrement par un enseignant-chercheur spécialisé en systèmes industriels.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Données utilisées</h3>
+                    <p>
+                        Dataset public NASA Turbofan Engine Degradation Simulation (C-MAPSS). 
+                        Environ 50 000 enregistrements de 21 capteurs sur 100 moteurs. 
+                        Données de run-to-failure simulées avec différents modes de défaillance.
+                    </p>
+                    <ul>
+                        <li>Variables : température, pression, vitesse de rotation, vibrations</li>
+                        <li>Cible : Remaining Useful Life (RUL) - nombre de cycles avant défaillance</li>
+                        <li>Prétraitement : normalisation, gestion des valeurs manquantes (< 2%)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Approche technique</h3>
+                    <p>
+                        Méthodologie CRISP-DM adaptée. Travail itératif avec plusieurs phases :
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Analyse exploratoire</strong> : étude des distributions, 
+                            corrélations entre capteurs, identification des patterns de dégradation
+                        </li>
+                        <li>
+                            <strong>Feature engineering</strong> : création de fenêtres glissantes, 
+                            calcul de tendances et statistiques sur fenêtres temporelles
+                        </li>
+                        <li>
+                            <strong>Modélisation</strong> : baseline avec régression linéaire, 
+                            puis Random Forest et XGBoost. Transformation du problème de 
+                            régression (RUL) en classification binaire (défaillance < 30 cycles)
+                        </li>
+                        <li>
+                            <strong>Validation</strong> : validation croisée temporelle (5 folds), 
+                            test sur moteurs non vus pendant l'entraînement
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span>Python 3.10</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+                        <span>scikit-learn</span>
+                        <span>XGBoost</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Jupyter</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Résultats obtenus</h3>
+                    <ul>
+                        <li>Précision de classification (seuil 30 cycles) : <strong>87%</strong></li>
+                        <li>Rappel sur classe "défaillance imminente" : <strong>82%</strong></li>
+                        <li>RMSE sur prédiction RUL : <strong>18.3 cycles</strong> (baseline : 31.2)</li>
+                        <li>Amélioration de 41% par rapport à la baseline linéaire</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Limites identifiées</h3>
+                    <ul>
+                        <li>
+                            Données simulées : le comportement réel des capteurs industriels 
+                            peut différer significativement
+                        </li>
+                        <li>
+                            Modèle statique : pas de prise en compte de l'évolution des 
+                            conditions d'exploitation
+                        </li>
+                        <li>
+                            Seuil de 30 cycles arbitraire : nécessiterait une étude 
+                            coût-bénéfice avec des données économiques réelles
+                        </li>
+                        <li>
+                            Interprétabilité limitée de XGBoost pour les opérateurs terrain
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Pistes d'amélioration</h3>
+                    <ul>
+                        <li>Intégration de modèles séquentiels (LSTM) pour mieux capturer les dépendances temporelles</li>
+                        <li>Ajout d'un module d'explicabilité (SHAP) pour les décisions critiques</li>
+                        <li>Test sur données réelles en partenariat avec un industriel</li>
+                        <li>Développement d'une interface de visualisation pour les techniciens</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 2: Fraud Detection -->
+            <article class="project-detail" id="fraud-detection" data-category="ml data">
+                <div class="project-detail-header">
+                    <div>
+                        <div class="project-meta">
+                            <span class="badge badge--secondary">Hackathon</span>
+                            <span class="badge">2025</span>
+                            <span class="badge">Équipe de 3</span>
+                        </div>
+                        <h2 style="margin-top: var(--space-3);">Détection de fraude bancaire sur données déséquilibrées</h2>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            Code source
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Problème adressé</h3>
+                    <p>
+                        La détection de fraude bancaire pose un défi classique en machine learning : 
+                        les classes sont extrêmement déséquilibrées (< 0.2% de transactions frauduleuses). 
+                        Les modèles naïfs atteignent 99%+ de précision en prédisant "non fraude" 
+                        systématiquement, ce qui est inutile en pratique.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Contexte</h3>
+                    <p>
+                        Hackathon IA organisé par une école partenaire (48h). Défi proposé par 
+                        une fintech locale. Équipe de 3 étudiants. Classement : top 5 sur 20 équipes.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Données utilisées</h3>
+                    <p>
+                        Dataset Kaggle "Credit Card Fraud Detection" (anonymisé par PCA). 
+                        284 807 transactions, dont 492 frauduleuses (0.172%). 
+                        30 features après transformation PCA + montant et temps.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Approche technique</h3>
+                    <ul>
+                        <li>
+                            <strong>Rééchantillonnage</strong> : comparaison SMOTE, ADASYN, 
+                            undersampling, et combinaison SMOTE + Tomek links
+                        </li>
+                        <li>
+                            <strong>Modèles testés</strong> : Régression logistique, 
+                            Random Forest, XGBoost, réseau de neurones simple (2 couches)
+                        </li>
+                        <li>
+                            <strong>Métriques</strong> : focus sur AUC-ROC, Precision-Recall, 
+                            et F1-score plutôt que l'accuracy
+                        </li>
+                        <li>
+                            <strong>Optimisation du seuil</strong> : analyse coût-bénéfice 
+                            pour déterminer le seuil de décision optimal
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>imbalanced-learn</span>
+                        <span>scikit-learn</span>
+                        <span>TensorFlow/Keras</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Résultats obtenus</h3>
+                    <ul>
+                        <li>Meilleur modèle : XGBoost + SMOTE avec AUC-ROC de <strong>0.98</strong></li>
+                        <li>Recall sur fraudes : <strong>91%</strong> (seuil optimisé)</li>
+                        <li>Precision : <strong>78%</strong> - taux de faux positifs acceptable</li>
+                        <li>Réduction estimée des pertes : 85% des fraudes détectées</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Limites identifiées</h3>
+                    <ul>
+                        <li>Données anonymisées par PCA : pas d'interprétabilité métier</li>
+                        <li>Pas de dimension temporelle dans le modèle (transactions indépendantes)</li>
+                        <li>Coût réel des faux positifs non quantifié (friction client)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Pistes d'amélioration</h3>
+                    <ul>
+                        <li>Modèles de détection d'anomalies (Isolation Forest, Autoencoders)</li>
+                        <li>Intégration du comportement utilisateur dans le temps</li>
+                        <li>Système d'alerte avec niveaux de confiance pour revue manuelle</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 3: COVID Dashboard -->
+            <article class="project-detail" id="covid-dashboard" data-category="data">
+                <div class="project-detail-header">
+                    <div>
+                        <div class="project-meta">
+                            <span class="badge">Projet personnel</span>
+                            <span class="badge">2024</span>
+                            <span class="badge">Solo</span>
+                        </div>
+                        <h2 style="margin-top: var(--space-3);">Dashboard d'analyse COVID-19</h2>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            Code source
+                        </a>
+                        <a href="#">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="2" y1="12" x2="22" y2="12"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                            Démo live
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Problème adressé</h3>
+                    <p>
+                        Pendant la pandémie, l'accès à des données claires et actualisées était 
+                        crucial. Ce projet visait à créer un tableau de bord interactif permettant 
+                        de visualiser l'évolution de la pandémie avec des données mises à jour 
+                        quotidiennement.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Contexte</h3>
+                    <p>
+                        Projet personnel réalisé pendant les vacances pour pratiquer la 
+                        visualisation de données et l'intégration d'APIs. Environ 40 heures 
+                        de travail sur 2 semaines.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Données utilisées</h3>
+                    <p>
+                        API COVID-19 Data Repository by Johns Hopkins CSSE. Données mondiales 
+                        mises à jour quotidiennement : cas confirmés, décès, guérisons par 
+                        pays et région.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Approche technique</h3>
+                    <ul>
+                        <li>Pipeline de récupération automatique des données via API REST</li>
+                        <li>Nettoyage et agrégation des données (gestion des incohérences entre sources)</li>
+                        <li>Visualisations interactives : cartes, courbes temporelles, comparaisons</li>
+                        <li>Calcul d'indicateurs dérivés : taux de mortalité, moyennes mobiles</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Plotly</span>
+                        <span>Dash</span>
+                        <span>Pandas</span>
+                        <span>Requests</span>
+                        <span>Heroku</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Résultats obtenus</h3>
+                    <ul>
+                        <li>Dashboard fonctionnel avec mise à jour automatique quotidienne</li>
+                        <li>5 visualisations interactives (carte mondiale, courbes, comparatifs)</li>
+                        <li>Temps de chargement < 3 secondes</li>
+                        <li>Partagé avec la communauté étudiante (~50 utilisateurs)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Limites identifiées</h3>
+                    <ul>
+                        <li>Dépendance à une source unique (fiabilité des données JHU)</li>
+                        <li>Pas de cache : chaque visite recharge les données complètes</li>
+                        <li>Interface non optimisée pour mobile</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Pistes d'amélioration</h3>
+                    <ul>
+                        <li>Ajout de modèles prédictifs simples (extrapolation)</li>
+                        <li>Intégration de données de vaccination</li>
+                        <li>Mise en cache avec Redis pour améliorer les performances</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Template for new projects -->
+            <div class="alert alert--info" style="margin-top: var(--space-12);">
+                <strong>Note :</strong> D'autres projets sont en cours de documentation. 
+                Cette page est mise à jour régulièrement avec de nouveaux travaux.
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">MOROU Salahou dine</p>
+                    <p class="footer-role">Étudiant Ingénieur — Centrale Casablanca</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@example.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MOROU Salahou dine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

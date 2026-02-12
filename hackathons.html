@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hackathons et projets académiques de MOROU Salahou dine - Compétitions IA et innovation.">
+    
+    <title>Hackathons | MOROU Salahou dine</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/pages.css">
+    
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">MSd</span>
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="about.html" class="nav-link">Profil</a></li>
+                <li><a href="projects.html" class="nav-link">Projets</a></li>
+                <li><a href="skills.html" class="nav-link">Compétences</a></li>
+                <li><a href="certificates.html" class="nav-link">Certificats</a></li>
+                <li><a href="hackathons.html" class="nav-link active">Hackathons</a></li>
+                <li><a href="contact.html" class="nav-link nav-link--cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Hackathons & Compétitions</h1>
+            <p class="page-description">
+                Participations à des événements techniques, compétitions de data science 
+                et projets d'innovation. Ces expériences développent la capacité à 
+                travailler sous contrainte et en équipe pluridisciplinaire.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Hackathon 1 -->
+            <article class="hackathon-card">
+                <div class="hackathon-header">
+                    <div>
+                        <h2 class="hackathon-title">DataChallenge Finance 2025</h2>
+                        <p class="hackathon-event">Hackathon IA — École partenaire — 48 heures</p>
+                    </div>
+                    <span class="hackathon-badge">Top 5 / 20 équipes</span>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Défi</h3>
+                    <p>
+                        Développer un système de détection de fraude bancaire performant sur 
+                        un dataset fortement déséquilibré (< 0.2% de fraudes). Le jury 
+                        évaluait la qualité du modèle, la méthodologie et la présentation.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Contribution</h3>
+                    <p>
+                        Équipe de 3 personnes. Responsable de la partie modélisation et 
+                        évaluation des métriques. Implémentation des techniques de 
+                        rééchantillonnage (SMOTE, ADASYN) et optimisation du seuil de décision.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Résultat</h3>
+                    <p>
+                        Modèle XGBoost avec AUC-ROC de 0.98 et recall de 91% sur les fraudes. 
+                        Classement final : 5ème sur 20 équipes. Points forts soulignés par 
+                        le jury : rigueur méthodologique et analyse critique des limites.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Apprentissages</h3>
+                    <ul>
+                        <li>Gestion du temps sous pression (priorisation des tâches)</li>
+                        <li>Importance de la baseline avant optimisation</li>
+                        <li>Communication technique avec un jury non-spécialiste</li>
+                    </ul>
+                </div>
+                
+                <div class="project-tech" style="margin-top: var(--space-4);">
+                    <span>Python</span>
+                    <span>scikit-learn</span>
+                    <span>imbalanced-learn</span>
+                    <span>XGBoost</span>
+                </div>
+                
+                <a href="projects.html#fraud-detection" class="project-link" style="margin-top: var(--space-4); display: inline-flex;">
+                    Voir le projet détaillé
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </article>
+
+            <!-- Hackathon 2 -->
+            <article class="hackathon-card">
+                <div class="hackathon-header">
+                    <div>
+                        <h2 class="hackathon-title">Innovation Week Centrale 2024</h2>
+                        <p class="hackathon-event">Semaine d'innovation — École Centrale Casablanca — 5 jours</p>
+                    </div>
+                    <span class="hackathon-badge">Participant</span>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Défi</h3>
+                    <p>
+                        Développer une solution technologique répondant à un enjeu de 
+                        développement durable. Thématique choisie : optimisation de la 
+                        consommation énergétique dans les bâtiments universitaires.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Contribution</h3>
+                    <p>
+                        Équipe de 5 étudiants pluridisciplinaires. Responsable de l'analyse 
+                        des données de consommation et de la modélisation prédictive. 
+                        Collaboration avec des étudiants en génie civil et électrique.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Résultat</h3>
+                    <p>
+                        Prototype de dashboard de monitoring avec alertes en cas de 
+                        consommation anormale. Démonstration fonctionnelle sur données 
+                        simulées. Retours positifs sur l'approche data-driven.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Apprentissages</h3>
+                    <ul>
+                        <li>Travail en équipe pluridisciplinaire (ingénieurs de différentes spécialités)</li>
+                        <li>Passage rapide de l'idée au prototype fonctionnel</li>
+                        <li>Présentation devant un jury mixte (technique + business)</li>
+                    </ul>
+                </div>
+                
+                <div class="project-tech" style="margin-top: var(--space-4);">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Plotly Dash</span>
+                    <span>Design Thinking</span>
+                </div>
+            </article>
+
+            <!-- Academic Project 1 -->
+            <article class="hackathon-card">
+                <div class="hackathon-header">
+                    <div>
+                        <h2 class="hackathon-title">Projet intégrateur ML</h2>
+                        <p class="hackathon-event">Projet académique — Module Machine Learning — 8 semaines</p>
+                    </div>
+                    <span class="hackathon-badge" style="background-color: var(--color-accent-primary-light); color: var(--color-accent-primary);">Note : 17/20</span>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Sujet</h3>
+                    <p>
+                        Système de prédiction de maintenance industrielle sur le dataset 
+                        NASA C-MAPSS. Projet encadré par un enseignant-chercheur avec 
+                        soutenance finale devant jury.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Contribution</h3>
+                    <p>
+                        Équipe de 4 étudiants. Responsable du feature engineering et de 
+                        l'implémentation des modèles de classification. Rédaction de la 
+                        partie méthodologique du rapport.
+                    </p>
+                </div>
+                
+                <div class="project-section">
+                    <h3>Évaluation</h3>
+                    <p>
+                        Note finale : 17/20. Points forts : rigueur de la démarche CRISP-DM, 
+                        qualité de l'analyse critique, documentation complète. Points 
+                        d'amélioration : exploration de modèles séquentiels (LSTM).
+                    </p>
+                </div>
+                
+                <div class="project-tech" style="margin-top: var(--space-4);">
+                    <span>Python</span>
+                    <span>scikit-learn</span>
+                    <span>XGBoost</span>
+                    <span>Matplotlib</span>
+                    <span>LaTeX</span>
+                </div>
+                
+                <a href="projects.html#maintenance-predictive" class="project-link" style="margin-top: var(--space-4); display: inline-flex;">
+                    Voir le projet détaillé
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </article>
+
+            <!-- Future -->
+            <section class="section" style="padding-top: var(--space-12);">
+                <h2 style="margin-bottom: var(--space-6);">Prochains objectifs</h2>
+                
+                <div class="overview-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="overview-card">
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-3);">Compétitions Kaggle</h3>
+                        <p>
+                            Participation à des compétitions de data science pour confronter 
+                            mes approches à celles de la communauté internationale et 
+                            améliorer mes techniques.
+                        </p>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <h3 style="font-size: var(--text-lg); margin-bottom: var(--space-3);">Hackathons Cybersécurité</h3>
+                        <p>
+                            Exploration des CTF (Capture The Flag) et événements de 
+                            cybersécurité pour développer cette compétence complémentaire.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">MOROU Salahou dine</p>
+                    <p class="footer-role">Étudiant Ingénieur — Centrale Casablanca</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:contact@example.com" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 MOROU Salahou dine. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
