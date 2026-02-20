@@ -109,14 +109,13 @@
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
             // Récupérer les données du formulaire
             const formData = new FormData(contactForm);
             const data = Object.fromEntries(formData.entries());
 
             // Validation simple
             if (!data.name || !data.email || !data.subject || !data.message) {
+                e.preventDefault();
                 showNotification('Veuillez remplir tous les champs obligatoires.', 'error');
                 return;
             }
@@ -124,22 +123,18 @@
             // Validation email
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(data.email)) {
+                e.preventDefault();
                 showNotification('Veuillez entrer une adresse email valide.', 'error');
                 return;
             }
 
-            // Simuler l'envoi (à remplacer par une vraie intégration)
+            // Désactiver le bouton pendant l'envoi
             const submitButton = contactForm.querySelector('button[type="submit"]');
             submitButton.disabled = true;
             submitButton.textContent = 'Envoi en cours...';
 
-            // Simulation de délai d'envoi
-            setTimeout(() => {
-                showNotification('Message envoyé avec succès. Je vous répondrai rapidement.', 'success');
-                contactForm.reset();
-                submitButton.disabled = false;
-                submitButton.textContent = 'Envoyer le message';
-            }, 1500);
+            // Le formulaire sera soumis à Formspree
+            // Formspree redirigera automatiquement vers une page de confirmation
         });
     }
 

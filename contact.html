@@ -154,7 +154,11 @@
                 <div class="contact-form">
                     <h2>Envoyer un message</h2>
                     
-                    <form id="contactForm" action="#" method="POST">
+                    <form id="contactForm" action="https://formspree.io/f/xnjbbzrn" method="POST">
+                        <!-- Champs cachés pour Formspree -->
+                        <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+                        <input type="text" name="_gotcha" style="display:none">
+                        
                         <div class="form-group">
                             <label for="name" class="form-label">Nom complet *</label>
                             <input 

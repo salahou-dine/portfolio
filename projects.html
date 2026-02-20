@@ -64,22 +64,120 @@
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 <button class="filter-btn" data-filter="data">Data Science</button>
                 <button class="filter-btn" data-filter="security">Cybersécurité</button>
-                <button class="filter-btn" data-filter="academic">Académique</button>
+                <button class="filter-btn" data-filter="web">Développement web</button>
             </div>
 
-            <!-- Project 1: Maintenance Prédictive -->
-            <article class="project-detail" id="maintenance-predictive" data-category="ml academic">
+            <!-- Project 3: Power BI Food Security -->
+            <article class="project-detail" id="food-security-africa" data-category="data">
                 <div class="project-detail-header">
                     <div>
                         <div class="project-meta">
-                            <span class="badge badge--primary">Projet académique</span>
-                            <span class="badge">2025</span>
-                            <span class="badge">Équipe de 4</span>
+                            <span class="badge badge--secondary">Data Science</span>
+                            <span class="badge">2026</span>
+                            <span class="badge">Équipe de 2</span>
                         </div>
-                        <h2 style="margin-top: var(--space-3);">Système de prédiction de maintenance industrielle</h2>
+                        <h2 style="margin-top: var(--space-3);">Analyse de la sécurité alimentaire en Afrique (Power BI)</h2>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="Projet_Data_Analyse/Projet_Data_Analyse.pbix" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            Fichier PBIX
+                        </a>
+                        <a href="Projet_Data_Analyse/Rapport_CRISP_DM_Morou_Ogodja.pdf" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                            </svg>
+                            Rapport CRISP-DM
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Problème adressé</h3>
+                    <p>
+                        La croissance démographique en Afrique augmente la pression sur les systèmes
+                        alimentaires. Ce projet vise à comparer, pays par pays, l'évolution de la
+                        production agricole, de la population et des indicateurs de sécurité
+                        alimentaire afin d'identifier les zones prioritaires.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Données et périmètre</h3>
+                    <p>
+                        Analyse construite à partir de données FAOSTAT (FAO) sur la période
+                        <strong>2000-2013</strong>, filtrées sur les pays africains.
+                    </p>
+                    <ul>
+                        <li>Tables exploitées : Food Security, Food Balance Sheets, Production, Population</li>
+                        <li>Intégration d'une dimension pays (`DimCountry_Africa`) pour fiabiliser les jointures</li>
+                        <li>Nettoyage des valeurs manquantes/aberrantes et harmonisation des unités</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Approche analytique</h3>
+                    <ul>
+                        <li>Méthodologie CRISP-DM appliquée de bout en bout (compréhension métier, préparation, modélisation, évaluation)</li>
+                        <li>Modèle en étoile avec tables de faits + table de dimension géographique</li>
+                        <li>Mesures DAX pour les KPI (moyenne, min, max, production par habitant, nombre de pays inclus)</li>
+                        <li>Analyse comparative inter-pays avec filtres dynamiques (année, indicateur, unité)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Tableau de bord Power BI</h3>
+                    <p>
+                        Le livrable final regroupe <strong>4 pages interactives</strong> :
+                        Food Security, Production, Food Balance Sheets et Determinants.
+                    </p>
+                    <ul>
+                        <li>Courbes temporelles pour suivre les tendances 2000-2013</li>
+                        <li>Classements pays (Top/Bottom) sur les indicateurs clés</li>
+                        <li>Cartes géographiques pour visualiser les disparités régionales</li>
+                        <li>Nuage de points "production par habitant vs sécurité alimentaire"</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
+                        <span>FAOSTAT</span>
+                        <span>CRISP-DM</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Résultats clés</h3>
+                    <ul>
+                        <li>Amélioration globale des indicateurs alimentaires sur la période, mais progression modérée</li>
+                        <li>Forte hétérogénéité entre pays, avec des écarts marqués sur les indicateurs de sécurité alimentaire</li>
+                        <li>Lien positif entre production par habitant et sécurité alimentaire, sans relation parfaitement linéaire</li>
+                        <li>Mise en évidence de l'importance de normaliser les mesures (totaux vs par habitant)</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Project 4: Obesity Prediction -->
+            <article class="project-detail" id="obesity-prediction" data-category="data">
+                <div class="project-detail-header">
+                    <div>
+                        <div class="project-meta">
+                            <span class="badge badge--secondary">Data Science</span>
+                            <span class="badge">2025</span>
+                            <span class="badge">Équipe de 5</span>
+                        </div>
+                        <h2 style="margin-top: var(--space-3);">Prediction d'obésité chez les humains</h2>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/salahou-dine/coding_week" target="_blank" rel="noopener noreferrer">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                             </svg>
@@ -90,7 +188,7 @@
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                                 <polyline points="14 2 14 8 20 8"/>
                             </svg>
-                            Rapport PDF
+                            Rapport
                         </a>
                     </div>
                 </div>
@@ -98,186 +196,51 @@
                 <div class="project-section">
                     <h3>Problème adressé</h3>
                     <p>
-                        Dans l'industrie manufacturière, les arrêts non planifiés d'équipements 
-                        représentent des pertes significatives (estimées entre 5% et 20% de la 
-                        capacité de production). L'objectif était de développer un système capable 
-                        d'anticiper les défaillances à partir de données de capteurs IoT, permettant 
-                        une planification proactive de la maintenance.
+                        L'obésité constitue un enjeu de santé publique majeur. L'objectif du projet
+                        était de prédire automatiquement le niveau d'obésité d'un individu à partir
+                        de ses habitudes alimentaires, son activité physique et quelques variables
+                        anthropométriques.
                     </p>
                 </div>
 
                 <div class="project-section">
                     <h3>Contexte</h3>
                     <p>
-                        Projet réalisé dans le cadre du module "Machine Learning Appliqué" 
-                        (2ème année). Travail en équipe de 4 étudiants sur 8 semaines. 
-                        Encadrement par un enseignant-chercheur spécialisé en systèmes industriels.
+                        Projet réalisé durant la Coding Week, en équipe de 5, avec une chaîne complète :
+                        exploration des données, modélisation, comparaison des algorithmes et intégration
+                        dans une application web Django pour l'inférence.
                     </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Aperçu de l'interface</h3>
+                    <figure class="project-visual">
+                        <img src="assets/projects/obesity-interface.jpg" alt="Interface web de prédiction du niveau d'obésité">
+                        <figcaption>Interface de saisie utilisée pour estimer le niveau d'obésité.</figcaption>
+                    </figure>
                 </div>
 
                 <div class="project-section">
                     <h3>Données utilisées</h3>
                     <p>
-                        Dataset public NASA Turbofan Engine Degradation Simulation (C-MAPSS). 
-                        Environ 50 000 enregistrements de 21 capteurs sur 100 moteurs. 
-                        Données de run-to-failure simulées avec différents modes de défaillance.
+                        Jeu de données UCI "Estimation of obesity levels based on eating habits and physical condition"
+                        (id 544), avec <strong>2111 lignes</strong> et <strong>17 variables</strong>.
+                        La cible est le niveau d'obésité (7 classes).
                     </p>
                     <ul>
-                        <li>Variables : température, pression, vitesse de rotation, vibrations</li>
-                        <li>Cible : Remaining Useful Life (RUL) - nombre de cycles avant défaillance</li>
-                        <li>Prétraitement : normalisation, gestion des valeurs manquantes (< 2%)</li>
+                        <li>Variables : âge, taille, poids, activité physique, habitudes alimentaires, transport</li>
+                        <li>Cible : NObeyesdad (de Insufficient_Weight à Obesity_Type_III)</li>
+                        <li>Prétraitement : nettoyage, encodage, normalisation et rééquilibrage avec SMOTE</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
                     <h3>Approche technique</h3>
-                    <p>
-                        Méthodologie CRISP-DM adaptée. Travail itératif avec plusieurs phases :
-                    </p>
                     <ul>
-                        <li>
-                            <strong>Analyse exploratoire</strong> : étude des distributions, 
-                            corrélations entre capteurs, identification des patterns de dégradation
-                        </li>
-                        <li>
-                            <strong>Feature engineering</strong> : création de fenêtres glissantes, 
-                            calcul de tendances et statistiques sur fenêtres temporelles
-                        </li>
-                        <li>
-                            <strong>Modélisation</strong> : baseline avec régression linéaire, 
-                            puis Random Forest et XGBoost. Transformation du problème de 
-                            régression (RUL) en classification binaire (défaillance < 30 cycles)
-                        </li>
-                        <li>
-                            <strong>Validation</strong> : validation croisée temporelle (5 folds), 
-                            test sur moteurs non vus pendant l'entraînement
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-section">
-                    <h3>Technologies utilisées</h3>
-                    <div class="project-tech">
-                        <span>Python 3.10</span>
-                        <span>Pandas</span>
-                        <span>NumPy</span>
-                        <span>scikit-learn</span>
-                        <span>XGBoost</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                        <span>Jupyter</span>
-                    </div>
-                </div>
-
-                <div class="project-section">
-                    <h3>Résultats obtenus</h3>
-                    <ul>
-                        <li>Précision de classification (seuil 30 cycles) : <strong>87%</strong></li>
-                        <li>Rappel sur classe "défaillance imminente" : <strong>82%</strong></li>
-                        <li>RMSE sur prédiction RUL : <strong>18.3 cycles</strong> (baseline : 31.2)</li>
-                        <li>Amélioration de 41% par rapport à la baseline linéaire</li>
-                    </ul>
-                </div>
-
-                <div class="project-section">
-                    <h3>Limites identifiées</h3>
-                    <ul>
-                        <li>
-                            Données simulées : le comportement réel des capteurs industriels 
-                            peut différer significativement
-                        </li>
-                        <li>
-                            Modèle statique : pas de prise en compte de l'évolution des 
-                            conditions d'exploitation
-                        </li>
-                        <li>
-                            Seuil de 30 cycles arbitraire : nécessiterait une étude 
-                            coût-bénéfice avec des données économiques réelles
-                        </li>
-                        <li>
-                            Interprétabilité limitée de XGBoost pour les opérateurs terrain
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="project-section">
-                    <h3>Pistes d'amélioration</h3>
-                    <ul>
-                        <li>Intégration de modèles séquentiels (LSTM) pour mieux capturer les dépendances temporelles</li>
-                        <li>Ajout d'un module d'explicabilité (SHAP) pour les décisions critiques</li>
-                        <li>Test sur données réelles en partenariat avec un industriel</li>
-                        <li>Développement d'une interface de visualisation pour les techniciens</li>
-                    </ul>
-                </div>
-            </article>
-
-            <!-- Project 2: Fraud Detection -->
-            <article class="project-detail" id="fraud-detection" data-category="ml data">
-                <div class="project-detail-header">
-                    <div>
-                        <div class="project-meta">
-                            <span class="badge badge--secondary">Hackathon</span>
-                            <span class="badge">2025</span>
-                            <span class="badge">Équipe de 3</span>
-                        </div>
-                        <h2 style="margin-top: var(--space-3);">Détection de fraude bancaire sur données déséquilibrées</h2>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                            </svg>
-                            Code source
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-section">
-                    <h3>Problème adressé</h3>
-                    <p>
-                        La détection de fraude bancaire pose un défi classique en machine learning : 
-                        les classes sont extrêmement déséquilibrées (< 0.2% de transactions frauduleuses). 
-                        Les modèles naïfs atteignent 99%+ de précision en prédisant "non fraude" 
-                        systématiquement, ce qui est inutile en pratique.
-                    </p>
-                </div>
-
-                <div class="project-section">
-                    <h3>Contexte</h3>
-                    <p>
-                        Hackathon IA organisé par une école partenaire (48h). Défi proposé par 
-                        une fintech locale. Équipe de 3 étudiants. Classement : top 5 sur 20 équipes.
-                    </p>
-                </div>
-
-                <div class="project-section">
-                    <h3>Données utilisées</h3>
-                    <p>
-                        Dataset Kaggle "Credit Card Fraud Detection" (anonymisé par PCA). 
-                        284 807 transactions, dont 492 frauduleuses (0.172%). 
-                        30 features après transformation PCA + montant et temps.
-                    </p>
-                </div>
-
-                <div class="project-section">
-                    <h3>Approche technique</h3>
-                    <ul>
-                        <li>
-                            <strong>Rééchantillonnage</strong> : comparaison SMOTE, ADASYN, 
-                            undersampling, et combinaison SMOTE + Tomek links
-                        </li>
-                        <li>
-                            <strong>Modèles testés</strong> : Régression logistique, 
-                            Random Forest, XGBoost, réseau de neurones simple (2 couches)
-                        </li>
-                        <li>
-                            <strong>Métriques</strong> : focus sur AUC-ROC, Precision-Recall, 
-                            et F1-score plutôt que l'accuracy
-                        </li>
-                        <li>
-                            <strong>Optimisation du seuil</strong> : analyse coût-bénéfice 
-                            pour déterminer le seuil de décision optimal
-                        </li>
+                        <li>Analyse exploratoire complète (distributions, corrélations, outliers)</li>
+                        <li>Comparaison de plusieurs modèles : Logistic Regression, Decision Tree, Random Forest, SVM, k-NN, Naive Bayes, Gradient Boosting, XGBoost, LightGBM, CatBoost</li>
+                        <li>Évaluation multicritère : Accuracy, Precision, Recall, F1-score, AUC-ROC</li>
+                        <li>Déploiement Django avec prédiction en ligne et interprétabilité SHAP</li>
                     </ul>
                 </div>
 
@@ -285,67 +248,201 @@
                     <h3>Technologies utilisées</h3>
                     <div class="project-tech">
                         <span>Python</span>
-                        <span>imbalanced-learn</span>
-                        <span>scikit-learn</span>
-                        <span>TensorFlow/Keras</span>
                         <span>Pandas</span>
+                        <span>scikit-learn</span>
+                        <span>CatBoost</span>
+                        <span>LightGBM</span>
+                        <span>XGBoost</span>
+                        <span>SHAP</span>
+                        <span>Django</span>
                     </div>
                 </div>
 
                 <div class="project-section">
                     <h3>Résultats obtenus</h3>
                     <ul>
-                        <li>Meilleur modèle : XGBoost + SMOTE avec AUC-ROC de <strong>0.98</strong></li>
-                        <li>Recall sur fraudes : <strong>91%</strong> (seuil optimisé)</li>
-                        <li>Precision : <strong>78%</strong> - taux de faux positifs acceptable</li>
-                        <li>Réduction estimée des pertes : 85% des fraudes détectées</li>
+                        <li>Random Forest : <strong>99.04%</strong> d'accuracy</li>
+                        <li>CatBoost : <strong>98.91%</strong> d'accuracy et <strong>0.999924</strong> en AUC-ROC</li>
+                        <li>Modèles boostés globalement proches de 99% de performance</li>
+                        <li>CatBoost retenu pour l'intégration finale dans l'application web</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
                     <h3>Limites identifiées</h3>
                     <ul>
-                        <li>Données anonymisées par PCA : pas d'interprétabilité métier</li>
-                        <li>Pas de dimension temporelle dans le modèle (transactions indépendantes)</li>
-                        <li>Coût réel des faux positifs non quantifié (friction client)</li>
+                        <li>Dataset unique : généralisation limitée sans validation externe</li>
+                        <li>Dépendance à des données déclaratives (biais de réponse possible)</li>
+                        <li>Performance très élevée à confirmer sur des données terrain nouvelles</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
                     <h3>Pistes d'amélioration</h3>
                     <ul>
-                        <li>Modèles de détection d'anomalies (Isolation Forest, Autoencoders)</li>
-                        <li>Intégration du comportement utilisateur dans le temps</li>
-                        <li>Système d'alerte avec niveaux de confiance pour revue manuelle</li>
+                        <li>Validation sur un dataset indépendant et plus diversifié</li>
+                        <li>Ajout d'une calibration des probabilités pour l'usage décisionnel</li>
+                        <li>Industrialisation du modèle via API et monitoring des dérives</li>
                     </ul>
                 </div>
             </article>
 
-            <!-- Project 3: COVID Dashboard -->
-            <article class="project-detail" id="covid-dashboard" data-category="data">
+            <!-- Project 5: RAM Companion -->
+            <article class="project-detail" id="ram-companion-webapp" data-category="web">
                 <div class="project-detail-header">
                     <div>
                         <div class="project-meta">
-                            <span class="badge">Projet personnel</span>
-                            <span class="badge">2024</span>
-                            <span class="badge">Solo</span>
+                            <span class="badge badge--primary">Développement web</span>
+                            <span class="badge">2026</span>
+                            <span class="badge">Projet full-stack</span>
                         </div>
-                        <h2 style="margin-top: var(--space-3);">Dashboard d'analyse COVID-19</h2>
+                        <h2 style="margin-top: var(--space-3);">Compagnon de voyageur intelligent (RAM Companion)</h2>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/salahou-dine/ram-journey-companion.git" target="_blank" rel="noopener noreferrer">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
                             </svg>
-                            Code source
+                            GitHub Front-end
                         </a>
+                        <a href="https://github.com/salahou-dine/hon_hon.git" target="_blank" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                            GitHub Back-end
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Problème adressé</h3>
+                    <p>
+                        Le parcours voyageur est souvent fragmenté entre réservation, suivi du trajet
+                        et recommandations sur place. Ce projet vise à centraliser ces besoins dans
+                        une application web unique, orientée expérience utilisateur.
+                    </p>
+                    <p>
+                        Projet réalisé en partenariat avec la RAM dans le cadre du projet Innovation
+                        à l'École Centrale Casablanca.
+                    </p>
+                </div>
+
+                <div class="project-section">
+                    <h3>Architecture full-stack</h3>
+                    <ul>
+                        <li><strong>Front-end</strong> : React + TypeScript, navigation avec React Router et gestion d'état distant via React Query</li>
+                        <li><strong>Back-end</strong> : API FastAPI versionnée (`/api/v1`) avec modules métier séparés (auth, bookings, my-trips, destinations, recommendations, privacy, preferences, feedback)</li>
+                        <li><strong>Données</strong> : SQLAlchemy + migrations Alembic, base SQLite en local et architecture compatible PostgreSQL</li>
+                        <li><strong>Extensibilité</strong> : couche provider pour les recommandations destination (mode mock et intégration API externe)</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Flux utilisateur couvert</h3>
+                    <ul>
+                        <li>Accueil avec vérification de l'état API et initialisation de session invitée</li>
+                        <li>Création d'une réservation (destination, dates, cabine, type de trajet)</li>
+                        <li>Consultation du tableau de bord et de la timeline personnalisée du voyage</li>
+                        <li>Recommandations contextuelles avant et après réservation</li>
+                        <li>Boucle d'amélioration via feedback utilisateur et préférences de voyage</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Fonctionnalités principales</h3>
+                    <ul>
+                        <li>Session invitée automatique avec token JWT</li>
+                        <li>Authentification légère + renouvellement de token côté front</li>
+                        <li>Création de réservation et suivi de la timeline de voyage</li>
+                        <li>Recommandations destination et arrivée selon ville/catégorie/budget</li>
+                        <li>Gestion des préférences utilisateur et consentement confidentialité</li>
+                        <li>Collecte de feedback utilisateur pour améliorer les recommandations</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Documentation technique (API)</h3>
+                    <ul>
+                        <li><strong>Healthcheck</strong> : `/api/v1/health` pour superviser la disponibilité</li>
+                        <li><strong>Authentification</strong> : `/api/v1/auth/guest` puis `/api/v1/auth/me`</li>
+                        <li><strong>Réservations</strong> : `/api/v1/bookings/` (création et consultation)</li>
+                        <li><strong>Timeline</strong> : `/api/v1/my-trips/timeline` et `/api/v1/my-trips/{booking_id}/timeline`</li>
+                        <li><strong>Reco</strong> : `/api/v1/recommendations/post-booking`, `/api/v1/destinations/recommendations`, `/api/v1/destinations/arrival`</li>
+                        <li><strong>Préférences/Confidentialité</strong> : `/api/v1/preferences`, `/api/v1/privacy/consent`</li>
+                        <li><strong>Exploration dev</strong> : documentation interactive FastAPI disponible sur `/docs`</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Sécurité, fiabilité et qualité</h3>
+                    <ul>
+                        <li>Authentification par JWT côté API et stockage contrôlé du token côté front</li>
+                        <li>Validation stricte des entrées avec retours d'erreurs explicites (422)</li>
+                        <li>Découpage en couches (`api`, `services`, `providers`, `models`, `schemas`) pour faciliter la maintenance</li>
+                        <li>Migrations de schéma versionnées via Alembic pour fiabiliser l'évolution de la base</li>
+                    </ul>
+                </div>
+
+                <div class="project-section">
+                    <h3>Technologies utilisées</h3>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>shadcn/ui</span>
+                        <span>FastAPI</span>
+                        <span>SQLAlchemy</span>
+                        <span>Alembic</span>
+                        <span>JWT</span>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Aperçu de l'interface</h3>
+                    <div class="project-gallery">
+                        <figure class="project-visual">
+                            <img src="assets/projects/ram-companion-home.png" alt="Page d'accueil de l'application RAM Companion">
+                            <figcaption>Page d'accueil et statut de connexion API.</figcaption>
+                        </figure>
+                        <figure class="project-visual">
+                            <img src="assets/projects/ram-companion-dashboard.png" alt="Tableau de bord du compagnon de voyageur">
+                            <figcaption>Tableau de bord voyageur avec accès rapide aux actions clés.</figcaption>
+                        </figure>
+                        <figure class="project-visual">
+                            <img src="assets/projects/ram-companion-booking.png" alt="Formulaire de nouvelle réservation RAM Companion">
+                            <figcaption>Formulaire de création d'une nouvelle réservation.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="project-section">
+                    <h3>Résultat</h3>
+                    <p>
+                        MVP full-stack fonctionnel avec parcours utilisateur cohérent, API documentée
+                        automatiquement (`/docs`) et base technique prête pour une montée en charge
+                        progressive (intégration fournisseur réel, scoring avancé, analytics produit).
+                    </p>
+                </div>
+            </article>
+
+            <!-- Project 6: Malware Analysis -->
+            <article class="project-detail" id="malware-analysis" data-category="security">
+                <div class="project-detail-header">
+                    <div>
+                        <div class="project-meta">
+                            <span class="badge badge--danger">Cybersécurité</span>
+                            <span class="badge">2026</span>
+                            <span class="badge">Projet académique</span>
+                        </div>
+                        <h2 style="margin-top: var(--space-3);">Les techniques d'analyse de malware</h2>
+                    </div>
+                    <div class="project-links">
                         <a href="#">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
                             </svg>
-                            Démo live
+                            Rapport
                         </a>
                     </div>
                 </div>
@@ -353,78 +450,75 @@
                 <div class="project-section">
                     <h3>Problème adressé</h3>
                     <p>
-                        Pendant la pandémie, l'accès à des données claires et actualisées était 
-                        crucial. Ce projet visait à créer un tableau de bord interactif permettant 
-                        de visualiser l'évolution de la pandémie avec des données mises à jour 
-                        quotidiennement.
+                        Les malwares constituent une menace croissante pour les systèmes d'information.
+                        Ce projet vise à explorer et maîtriser les différentes techniques d'analyse
+                        utilisées par les professionnels de la cybersécurité pour détecter, comprendre
+                        et neutraliser les logiciels malveillants.
                     </p>
                 </div>
 
                 <div class="project-section">
                     <h3>Contexte</h3>
                     <p>
-                        Projet personnel réalisé pendant les vacances pour pratiquer la 
-                        visualisation de données et l'intégration d'APIs. Environ 40 heures 
-                        de travail sur 2 semaines.
-                    </p>
-                </div>
-
-                <div class="project-section">
-                    <h3>Données utilisées</h3>
-                    <p>
-                        API COVID-19 Data Repository by Johns Hopkins CSSE. Données mondiales 
-                        mises à jour quotidiennement : cas confirmés, décès, guérisons par 
-                        pays et région.
+                        Projet réalisé dans le cadre du cours de cybersécurité, avec pour objectif
+                        d'acquérir une compréhension pratique des méthodes d'analyse de malware,
+                        de l'analyse statique à l'analyse dynamique en environnement contrôlé.
                     </p>
                 </div>
 
                 <div class="project-section">
                     <h3>Approche technique</h3>
                     <ul>
-                        <li>Pipeline de récupération automatique des données via API REST</li>
-                        <li>Nettoyage et agrégation des données (gestion des incohérences entre sources)</li>
-                        <li>Visualisations interactives : cartes, courbes temporelles, comparaisons</li>
-                        <li>Calcul d'indicateurs dérivés : taux de mortalité, moyennes mobiles</li>
+                        <li><strong>Analyse statique</strong> : extraction des métadonnées, strings, imports/exports, 
+                            analyse des headers PE et identification des signatures connues</li>
+                        <li><strong>Analyse dynamique</strong> : exécution en sandbox (environnement isolé), 
+                            monitoring des appels système, analyse du trafic réseau et des modifications fichiers/registre</li>
+                        <li><strong>Reverse engineering</strong> : désassemblage et décompilation pour comprendre 
+                            la logique du malware et identifier les indicateurs de compromission (IoC)</li>
+                        <li><strong>Classification</strong> : identification du type de malware (ransomware, trojan, 
+                            spyware, etc.) et de ses capacités</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
-                    <h3>Technologies utilisées</h3>
+                    <h3>Outils utilisés</h3>
                     <div class="project-tech">
-                        <span>Python</span>
-                        <span>Plotly</span>
-                        <span>Dash</span>
-                        <span>Pandas</span>
-                        <span>Requests</span>
-                        <span>Heroku</span>
+                        <span>Linux</span>
+                        <span>VirtualBox</span>
+                        <span>Wireshark</span>
+                        <span>Process Monitor</span>
+                        <span>IDA Free</span>
+                        <span>Ghidra</span>
+                        <span>YARA</span>
+                        <span>VirusTotal</span>
                     </div>
                 </div>
 
                 <div class="project-section">
-                    <h3>Résultats obtenus</h3>
+                    <h3>Compétences développées</h3>
                     <ul>
-                        <li>Dashboard fonctionnel avec mise à jour automatique quotidienne</li>
-                        <li>5 visualisations interactives (carte mondiale, courbes, comparatifs)</li>
-                        <li>Temps de chargement < 3 secondes</li>
-                        <li>Partagé avec la communauté étudiante (~50 utilisateurs)</li>
+                        <li>Configuration d'environnements d'analyse isolés et sécurisés</li>
+                        <li>Utilisation d'outils professionnels d'analyse de malware</li>
+                        <li>Rédaction de rapports d'analyse avec indicateurs de compromission</li>
+                        <li>Compréhension des techniques d'évasion utilisées par les malwares modernes</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
                     <h3>Limites identifiées</h3>
                     <ul>
-                        <li>Dépendance à une source unique (fiabilité des données JHU)</li>
-                        <li>Pas de cache : chaque visite recharge les données complètes</li>
-                        <li>Interface non optimisée pour mobile</li>
+                        <li>Analyse réalisée sur des échantillons éducatifs, différents des menaces réelles avancées</li>
+                        <li>Techniques d'obfuscation sophistiquées difficiles à contourner sans outils spécialisés</li>
+                        <li>Nécessité d'une veille permanente face à l'évolution rapide des techniques</li>
                     </ul>
                 </div>
 
                 <div class="project-section">
                     <h3>Pistes d'amélioration</h3>
                     <ul>
-                        <li>Ajout de modèles prédictifs simples (extrapolation)</li>
-                        <li>Intégration de données de vaccination</li>
-                        <li>Mise en cache avec Redis pour améliorer les performances</li>
+                        <li>Approfondir l'analyse de malwares plus complexes (packers, crypters)</li>
+                        <li>Automatiser la détection via règles YARA personnalisées</li>
+                        <li>Explorer l'application du machine learning à la détection de malware</li>
                     </ul>
                 </div>
             </article>

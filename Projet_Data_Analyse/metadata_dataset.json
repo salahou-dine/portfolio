@@ -1,0 +1,122 @@
+{
+  "dataset": {
+    "name": "African Food Security, Population and Agricultural Production Dataset",
+    "description": "Ce dataset regroupe des données issues de FAOSTAT relatives à la sécurité alimentaire, à la population et à la production agricole et d'élevage pour les pays africains. Il est utilisé pour analyser les tendances, comparer les pays et étudier les relations entre production, disponibilité alimentaire et dynamique démographique sur plusieurs années.",
+    "geographical_scope": "Pays africains",
+    "temporal_scope": "Plusieurs années selon les tables (séries temporelles)",
+    "source": {
+      "institution": "Food and Agriculture Organization of the United Nations (FAO)",
+      "url": "https://www.fao.org/faostat/en/#home"
+    },
+    "original_format": "CSV (FAOSTAT - données normalisées)"
+  },
+
+  "tables": [
+    {
+      "table_name": "AfricanCountries",
+      "role": "Table de filtrage",
+      "description": "Liste des pays africains utilisés pour restreindre le périmètre géographique de l'analyse.",
+      "variables": [
+        {
+          "name": "Area",
+          "type": "catégoriel",
+          "description": "Nom du pays africain."
+        }
+      ]
+    },
+
+    {
+      "table_name": "DimCountry_Africa",
+      "role": "Dimension géographique",
+      "description": "Table de dimension contenant les codes et les noms des pays africains, utilisée pour les jointures avec les tables de faits.",
+      "variables": [
+        {
+          "name": "Area Code",
+          "type": "catégoriel",
+          "description": "Code interne FAO identifiant le pays."
+        },
+        {
+          "name": "M49 Code",
+          "type": "catégoriel",
+          "description": "Code M49 des Nations Unies identifiant le pays."
+        },
+        {
+          "name": "Area",
+          "type": "catégoriel",
+          "description": "Nom du pays."
+        }
+      ]
+    },
+
+    {
+      "table_name": "Food_Security_Data_E_All_Data_(Normalized)",
+      "role": "Table de faits",
+      "description": "Données relatives aux indicateurs de sécurité alimentaire (accès à l'eau potable, disponibilité alimentaire, etc.) pour les pays africains.",
+      "variables": [
+        { "name": "Area Code", "type": "catégoriel", "description": "Code FAO du pays." },
+        { "name": "Area Code (M49)", "type": "catégoriel", "description": "Code M49 du pays." },
+        { "name": "Area", "type": "catégoriel", "description": "Nom du pays." },
+        { "name": "Item Code", "type": "catégoriel", "description": "Code de l'indicateur de sécurité alimentaire." },
+        { "name": "Item", "type": "texte", "description": "Nom de l'indicateur mesuré." },
+        { "name": "Element Code", "type": "catégoriel", "description": "Code du type de mesure associée à l'indicateur." },
+        { "name": "Element", "type": "texte", "description": "Type de valeur mesurée (ex : valeur, pourcentage)." },
+        { "name": "Year", "type": "date", "description": "Année d'observation de l'indicateur." },
+        { "name": "Unit", "type": "texte", "description": "Unité de mesure de l'indicateur." },
+        { "name": "Value", "type": "numérique", "description": "Valeur mesurée de l'indicateur pour l'année et le pays considérés." }
+      ]
+    },
+
+    {
+      "table_name": "FoodBalanceSheets_E_All_Data_(Normalized)",
+      "role": "Table de faits",
+      "description": "Données issues des bilans alimentaires décrivant la disponibilité et l'utilisation des produits alimentaires.",
+      "variables": [
+        { "name": "Area Code", "type": "catégoriel", "description": "Code FAO du pays." },
+        { "name": "Area", "type": "catégoriel", "description": "Nom du pays." },
+        { "name": "Item Code", "type": "catégoriel", "description": "Code du produit alimentaire." },
+        { "name": "Item", "type": "texte", "description": "Nom du produit alimentaire." },
+        { "name": "Element", "type": "texte", "description": "Type de flux alimentaire (production, importations, consommation, etc.)." },
+        { "name": "Year", "type": "date", "description": "Année d'observation." },
+        { "name": "Unit", "type": "texte", "description": "Unité de mesure." },
+        { "name": "Value", "type": "numérique", "description": "Valeur mesurée du flux alimentaire." }
+      ]
+    },
+
+    {
+      "table_name": "Population_E_All_Data_(Normalized)",
+      "role": "Table de faits",
+      "description": "Données démographiques relatives à la population totale des pays africains.",
+      "variables": [
+        { "name": "Area Code", "type": "catégoriel", "description": "Code FAO du pays." },
+        { "name": "Area", "type": "catégoriel", "description": "Nom du pays." },
+        { "name": "Item", "type": "texte", "description": "Indicateur démographique (population estimée ou projetée)." },
+        { "name": "Year", "type": "date", "description": "Année d'estimation ou de projection." },
+        { "name": "Unit", "type": "texte", "description": "Unité de mesure (nombre de personnes)." },
+        { "name": "Value", "type": "numérique", "description": "Population totale estimée pour le pays et l'année considérés." }
+      ]
+    },
+
+    {
+      "table_name": "Production_Crops_Livestock_E_All_Data_(Normalized)",
+      "role": "Table de faits",
+      "description": "Données sur la production agricole et d'élevage (quantités produites, rendements, surfaces).",
+      "variables": [
+        { "name": "Area Code", "type": "catégoriel", "description": "Code FAO du pays." },
+        { "name": "Area", "type": "catégoriel", "description": "Nom du pays." },
+        { "name": "Item", "type": "texte", "description": "Produit agricole ou d'élevage." },
+        { "name": "Element", "type": "texte", "description": "Type de mesure de production (quantité, rendement, surface, etc.)." },
+        { "name": "Year", "type": "date", "description": "Année de production." },
+        { "name": "Unit", "type": "texte", "description": "Unité de mesure." },
+        { "name": "Value", "type": "numérique", "description": "Valeur mesurée de la production." }
+      ]
+    }
+  ],
+
+  "applied_treatments": [
+    "Filtrage des données pour ne conserver que les pays africains",
+    "Suppression ou remplacement des valeurs erronées ou manquantes",
+    "Normalisation des structures des tables FAOSTAT",
+    "Harmonisation des noms de colonnes et des types de données",
+    "Séparation des tables de dimensions et des tables de faits pour la modélisation Power BI"
+  ]
+}
