@@ -1,6 +1,6 @@
 # Portfolio MOROU Salahou dine
 
-Portfolio professionnel d'un étudiant ingénieur à l'École Centrale Casablanca, spécialisé en Intelligence Artificielle, Data Science et Cybersécurité.
+Portfolio professionnel 
 
 ## Structure du projet
 
@@ -101,14 +101,10 @@ Le site peut être déployé gratuitement sur :
 
 ## Évolutions possibles
 
-1. **Intégration formulaire** : Connecter le formulaire de contact à Formspree, Netlify Forms ou EmailJS
-2. **Blog technique** : Ajouter une section blog pour partager des articles
-3. **Projets dynamiques** : Migrer vers Next.js/Astro pour génération depuis markdown
-4. **Analytics** : Ajouter Plausible ou Fathom pour le suivi (respectueux de la vie privée)
+1. **Blog technique** : Ajouter une section blog pour partager des articles
+2. **Projets dynamiques** : Migrer vers Next.js/Astro pour génération depuis markdown
+3. **Analytics** : Ajouter Plausible ou Fathom pour le suivi (respectueux de la vie privée)
 
-## Licence
-
-Ce code est fourni comme template. Libre d'utilisation et de modification.
 
 ---
 
